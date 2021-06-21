@@ -25,4 +25,12 @@ public class Cartao {
 
     }
     
+    public String getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    
 }
