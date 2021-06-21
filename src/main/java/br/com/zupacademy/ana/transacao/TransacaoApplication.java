@@ -11,14 +11,4 @@ public class TransacaoApplication {
 		SpringApplication.run(TransacaoApplication.class, args);
 	}
 
-
-
-//	@Bean
-//	JsonMessageConverter jsonMessageConverter() {
-//		return new JsonMessageConverter();
-//	}
-//
-//         @KafkaListener(id = "my.cats", topics = "cats")
-//          void cats(Cat cat) {
-//	          System.out.println("cat = " + cat);
 } 
