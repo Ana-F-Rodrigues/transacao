@@ -1,5 +1,7 @@
 package br.com.zupacademy.ana.transacao;
 
+import javax.validation.Valid;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.support.converter.JsonMessageConverter;
@@ -18,7 +20,7 @@ public class ListenerTransacao {
     JsonMessageConverter jsonMessageConverter() {
         return new JsonMessageConverter();
     }
-
+    
     @KafkaListener(topics = "${spring.kafka.topic.transactions}", groupId = "${spring.kafka.consumer.group-id}")
     public void ouvir(EventoTransacao evento) {
         System.out.println(evento);

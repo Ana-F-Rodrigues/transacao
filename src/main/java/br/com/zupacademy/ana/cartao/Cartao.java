@@ -1,4 +1,4 @@
-package br.com.zupacademy.ana.transacao;
+package br.com.zupacademy.ana.cartao;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,8 +11,16 @@ public class Cartao {
 	@Id
     private String id;
 
-    @Email
-    @NotBlank
+    public String getId() {
+		return id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+//	@Email
+//    @NotBlank
     private String email;
 
     @Deprecated
@@ -24,6 +32,7 @@ public class Cartao {
         this.email = email;
 
     }
+
    
     
 }

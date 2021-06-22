@@ -1,16 +1,16 @@
-package br.com.zupacademy.ana.transacao;
+package br.com.zupacademy.ana.estabelecimento;
 
 import javax.validation.constraints.NotBlank;
 
 public class EstabelecimentoResponse {
 
-	   @NotBlank
+//	   @NotBlank
 	    private String nome;
 
-	    @NotBlank
+//	    @NotBlank
 	    private String cidade;
 
-	    @NotBlank
+//	    @NotBlank
 	    private String endereco;
 
 	    public EstabelecimentoResponse() {

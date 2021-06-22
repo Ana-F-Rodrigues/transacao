@@ -1,15 +1,15 @@
-package br.com.zupacademy.ana.transacao;
+package br.com.zupacademy.ana.cartao;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 public class CartaoResponse {
 	
-	   @NotBlank
+//	   @NotBlank
 	    private String id;
 
-	    @Email
-	    @NotBlank
+//	    @Email
+//	    @NotBlank
 	    private String email;
 
 	    public CartaoResponse() {

@@ -1,7 +1,13 @@
 package br.com.zupacademy.ana.transacao;
 
-import org.springframework.data.repository.PagingAndSortingRepository;
+import java.util.List;
 
-public interface TransacaoRepository extends PagingAndSortingRepository<Transacao, Long>{
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TransacaoRepository extends JpaRepository<Transacao, Long>{
+	
+	  List<Transacao> findTop10ByCartaoIdOrderByEfetivadaEmDesc(String idCartao);
 
 }

@@ -6,21 +6,26 @@ import java.time.LocalDateTime;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import br.com.zupacademy.ana.cartao.Cartao;
+import br.com.zupacademy.ana.cartao.CartaoResponse;
+import br.com.zupacademy.ana.estabelecimento.Estabelecimento;
+import br.com.zupacademy.ana.estabelecimento.EstabelecimentoResponse;
+
 public class EventoTransacao {
 	
-	   @NotBlank
+//	   @NotBlank
 	    private String id;
 
-	    @NotNull
+//	    @NotNull
 	    private BigDecimal valor;
 
-	    @NotNull
+//	    @NotNull
 	    private EstabelecimentoResponse estabelecimento;
 
-	    @NotNull
+//	    @NotNull
 	    private CartaoResponse cartao;
 
-	    @NotNull
+//	    @NotNull
 	    private LocalDateTime efetivadaEm;
 
 	    public EventoTransacao() {

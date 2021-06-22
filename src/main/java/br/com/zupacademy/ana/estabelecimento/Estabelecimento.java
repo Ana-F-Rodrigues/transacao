@@ -1,4 +1,4 @@
-package br.com.zupacademy.ana.transacao;
+package br.com.zupacademy.ana.estabelecimento;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,5 +30,17 @@ public class Estabelecimento {
 	        this.cidade = cidade;
 	        this.endereco = endereco;
 	    }
+
+		public String getNome() {
+			return nome;
+		}
+
+		public String getCidade() {
+			return cidade;
+		}
+
+		public String getEndereco() {
+			return endereco;
+		}
 
 }
